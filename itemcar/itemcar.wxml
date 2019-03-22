@@ -1,0 +1,20 @@
+<!--pages/itemcar/itemcar.wxml-->
+<view class='view'>
+<view class='view1' wx:for='{{carts}}' wx:key='{{item.id}}'>
+  <view class='view_1' bindtap='shanchu'  data-index='{{index}}'>
+   <image src='/pages/img/删除.png' class='image1'></image>
+  </view>
+  <view class='view_2'>
+    <image src='{{item.img_url}}' class='image2'></image>
+    <view class='view_3'>
+      <view class='viewtext'>
+        <text>{{item.title}}</text>
+        <text>{{item.count}}件</text>        
+      </view>
+      <view class='viewprice'>
+      ￥{{item.price*item.count}}
+      </view>
+    </view>
+  </view>
+</view>
+</view>

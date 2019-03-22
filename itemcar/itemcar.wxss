@@ -1,0 +1,74 @@
+/* pages/itemcar/itemcar.wxss */
+.view{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: #F6F6F6;
+}
+.view1{
+  display: flex;
+  height: 200rpx;
+  width: 100%;
+  background: white;
+}
+.view1 .image1{
+width: 50rpx;
+height: 50rpx;
+}
+.image2{
+  margin: 0 10rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border:1px solid #FEF8FA;
+}
+.view_1{
+  width: 15%;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto 0;
+}
+.view_2{
+  width: 85%;
+  height: 150rpx;
+  margin: auto 0;
+  display: block;
+}
+.view_2 .view_3{
+width: 467rpx;
+height: 150rpx;
+display: inline-block;
+position: absolute;
+}
+.view_2 .viewtext{
+  height: 105rpx;
+  font-size: 17px;
+   margin: 24rpx 0;
+}
+.viewtext text{
+ 
+display: block;
+}
+.view_2 .viewprice{
+   height: 50rpx;
+   font-size: 15px;
+   color: red;
+   text-align: right;
+   margin-right: 50rpx;
+   position: absolute;
+   right: 0;
+   top:108rpx;
+}
+.view2{
+width:100%;
+position:absolute;
+height:100%;
+}
+.view2 image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.view2 view:first-child{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center
+}

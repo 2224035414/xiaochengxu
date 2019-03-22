@@ -1,0 +1,51 @@
+<!--<--jeep服务-->
+<!-- 搜索框 -->
+<view class='view1'>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <image class='image1' src='/pages/img/sou1.png' mode='scaleToFill' lazy-load></image>
+      <input bindtap='souSuo' class="weui-input" auto-focus placeholder="请输入搜索内容"/>
+    </view>
+  </view>
+</view>
+<!-- 轮播图 -->
+<view class='slider'>
+  <swiper autoplay interval='3000' indicator-dots>
+    <swiper-item wx:for="{{list}}" wx:key="index">
+      <image src='{{item.img_url}}' lazy-load mode='aspectFill' bindtap='cars'></image>
+    </swiper-item>  
+  </swiper> 
+</view>
+<!-- 分割块 -->
+<view class='divider'></view>
+<!-- title -->
+<view class='view_title'>
+  <view bindtap='title1' class='{{title_border?"border_bottom":""}}'>商品</view>
+  <view bindtap='title2' class='{{title_border1?"border_bottom":""}}'>分类</view>
+</view>
+<view class="goods {{hide?'hide':''}}">
+  <view>销量</view>
+  <view>新品</view>
+  <view>价格</view>
+</view>
+<view class="index-nav {{hide?'hide':''}}" >
+  <view class="nav-item" wx:for='{{lists}}' wx:key='item.id'>
+    <image src="{{item.img_url}}" mode="aspectFill" lazy-load bindtap='handleJumpnews' data-id='{{item.id}}'></image>
+  <view class='view_title1'>
+    <view>{{item.title}}</view>
+    <view>
+      <text>￥{{item.price}}</text>
+      <text>已售{{item.sold}}件</text>
+    </view>
+  </view>
+</view>
+</view>
+<view class="index-nav {{hide1?'hide':''}}"> 
+  <view class='nav-item item1' wx:for='{{nav}}' wx:key='item.id'bindtap="cars">
+    <image src='{{item.img_url}}' lazy-load mode='aspectFill'></image>
+    <view class='itemtext'>{{item.title}}</view>
+    <view class='item2'></view>
+  </view> 
+</view>
+<!-- 分割块 -->
+<view class='divider'></view> 

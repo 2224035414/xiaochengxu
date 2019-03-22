@@ -1,0 +1,112 @@
+/* pages/product/product.wxss */
+.view1{
+  width: 100%;
+  height: 94rpx;
+  position: fixed;
+  display: block;
+}
+
+.weui-input{
+  border: 1px solid black;
+  width: 620rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  background: rgb(56, 55, 55);
+  font-size: 25rpx;
+  padding: 10rpx 0;
+  padding-left: 87rpx;
+}
+.weui-cell_input{
+  background: black;
+  padding: 10rpx 0;
+}
+.image1{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 36rpx;
+  top:19rpx;
+}
+
+.list{
+width: 75%;
+height: 100%;
+float: right;
+position: relative;
+z-index: -99;
+top:94rpx;
+}
+.list1 view{
+  display: inline-block;
+}
+.list1{
+  width: 100%;
+  height: 94rpx;
+  border-bottom: 1px solid black;
+}
+.list1 view{
+  width: 33.33333333%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 16px;
+  color: gray;
+}
+.list .view_for{
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+
+}
+.list .kongbai{
+  width: 100%;
+  height: 10rpx;
+  border-right:1px solid black;
+}
+.hidden{
+  display: none;
+}
+.border{
+  background: white;
+  border-left: 2px solid black;
+}
+.float_left{
+  width: 25%;
+  position: fixed;
+  top:94rpx;
+  height: 100%;
+  background: #F3F3F3;
+}
+.float_left view{
+  font-size: 16px;
+  height: 94rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border-bottom: 1px solid gray;
+}
+.float_left view:first-child{
+   background: white;
+}
+.view_for{
+  display: flex;
+  margin: 15rpx;
+}
+.view_for image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.view_for_text{
+  margin-left: 10rpx;
+  width: 50%;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 20rpx;
+}
+.view_for_text view{
+  margin-top: 5rpx;
+}
+.view_for_text view:nth-child(2){
+  color:gray;
+}
+.view_for_text view:nth-child(3){
+  color:red;
+}

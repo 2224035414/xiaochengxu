@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/TEXT/text",
+    "pages/home/home",
+    "pages/product/product",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/itemcar/itemcar",
+    "pages/phone/phone",
+    "pages/sousuo/sousuo",
+    "pages/details/details",
+    "pages/new/new",
+    "pages/cars/cars"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "jeep服务",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#1E1E1E",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "jeep服务",
+        "iconPath": "pages/img/home.png",
+        "selectedIconPath": "pages/img/home1.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "商品分类",
+        "iconPath": "pages/img/product.png",
+        "selectedIconPath": "pages/img/product1.png"
+      },
+      {
+        "pagePath": "pages/phone/phone",
+        "text": "联系我们",
+        "iconPath": "pages/img/tel.png",
+        "selectedIconPath": "pages/img/tel.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻列表",
+        "iconPath": "pages/img/news.png",
+        "selectedIconPath": "pages/img/news1.png"
+      },
+      {
+        "pagePath": "pages/itemcar/itemcar",
+        "text": "购物车",
+        "iconPath": "pages/img/gou.png",
+        "selectedIconPath": "pages/img/gou1.png"
+      }
+    ]
+  }
+}

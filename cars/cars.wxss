@@ -1,0 +1,4 @@
+/* pages/cars/cars.wxss */
+page{
+  text-align: center;
+}

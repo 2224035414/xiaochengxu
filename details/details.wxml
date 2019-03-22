@@ -1,0 +1,79 @@
+<view class='home'bindtap='handleJumphome'>
+  <view>
+  <image src='/pages/img/home (2).png'mode="aspectFill" lazy-load ></image>
+  </view>
+</view>
+<view class="nav-item">
+    <image class='image1' src="{{lists.img_url}}" mode="aspectFill" bindtap='getImageList'>
+    </image>
+  <view class='view1'>
+    <view class='text1'>
+     {{lists.title}}
+      <view>
+        分享
+        <image src='/pages/img/分享方式.png'mode="aspectFill" lazy-load ></image>
+      </view>
+    </view>
+    <view class='text2'>
+      ￥{{lists.price}}
+      <view>
+      已售{{lists.sold}}件
+      </view>
+    </view>
+  </view>
+</view>
+<view class='youhui'>
+  <view class='youhui1'> 
+    <view>
+    可用优惠券
+      <text>满50减10</text>
+      <text>满100减30</text>
+      <text>满200减50</text>
+      <image src='/pages/img/yh.png'mode="aspectFill" lazy-load ></image>
+    </view>
+  </view>
+    <view class='wechat'>
+      <view>
+        <image src='/pages/img/微信支付 (1).png'mode="aspectFill" lazy-load ></image>
+        <text>支持微信支付</text>
+      </view>
+    </view>
+</view>
+
+<view class="nav-item">
+<image class='image3' src='http://127.0.0.1:3000/img/666.jpg'mode="aspectFill" lazy-load></image>
+</view>
+<view class='shopping hide{{showView?"show":""}}'>
+  <view>
+    <image src='/pages/img/客服.png' mode="aspectFill" lazy-load ></image>
+    <button class='button1' open-type='contact'></button>
+  </view>
+  <view bindtap='click'>
+  <image class='float {{yingchang1?"yingchang":""}}' src='/pages/img/圆圈.png' mode="aspectFill" lazy-load></image>
+  <text class='float1 {{yingcgang1?"yingchang":""}}'>{{numm}}</text>
+    <image src='/pages/img/购物车.png' mode="aspectFill" lazy-load ></image>
+  </view>
+  <view bindtap='onChang' >
+    加入购物车
+  </view>
+  <view bindtap='onChang'>
+    立即购买
+  </view>
+</view>
+<!-- 加入购物车 -->
+<view class='none {{showView?"hide":""}} ' scroll-y='{{showView1?"gundong":""}}' catchtouchmove="true" >
+  <view bindtap='chumo'>
+
+  </view>
+  <view class='bottom'>     
+   数量
+    <view class='anniu'>
+      <image src='/pages/img/减.png' mode="aspectFill" lazy-load bindtap='anniu1'></image>
+      <input type='text' bindinput='input1' value='{{num}}'name='value1' disabled='{{disabled1?"disabled":""}}'></input>
+      <image src='/pages/img/加.png' mode="aspectFill" lazy-load bindtap='anniu2'></image>
+    </view>
+  </view>
+  <view>
+  <button bindtap='queding'>确定</button>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+/* pages/new/new.wxss */
+.img_view image{
+  width: 100%;
+}
+.view_text{
+margin: 50rpx 15rpx;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold
+}
+.view_text .view2{
+  font-size: 14px;
+  margin-top: 10rpx;
+  color: gray;
+}
+.view_text1{
+  margin: 0 15rpx;
+}
+.view_text1 view{
+font-size: 16px;
+margin: 20rpx 0;
+}
+.view_text1 image{
+  width: 100%
+}

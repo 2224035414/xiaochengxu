@@ -1,0 +1,14 @@
+<!--pages/news/news.wxml-->
+<view class='bookTop'>
+  <view class='bookwenzhang'>
+  文章
+  </view>
+  <view class='booksousuo'>
+  <image src='/pages/img/查询.png'mode="aspectFill" lazy-load bindtap='sousuo'></image>
+  </view>
+</view>
+<view class='book' wx:for='{{books}}' wx:key='item.id' bindtap='bookText' id='{{item.id}}'>
+      <image src='{{item.img_url}}' mode='scaleToFill' lazy-load class='bookimg' ></image>
+      <view class='view1'>{{item.title}}</view>
+      <view class='view2'>{{item.time}}</view>
+</view>

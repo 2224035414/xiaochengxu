@@ -1,0 +1,5 @@
+<!--pages/cars/cars.wxml-->
+<view wx:for="{{cars}}" wx:key="index">
+  <text>{{item.id}}\n</text>
+  <image src='{{item.img}}'></image>
+</view>

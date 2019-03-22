@@ -1,0 +1,42 @@
+<!--pages/product/product.wxml-->
+<view class='view1'>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <image class='image1' src='/pages/img/a.png' mode='scaleToFill' lazy-load></image>
+      <input bindtap='souSuo' class="weui-input" auto-focus placeholder="请输入搜索内容"/>
+    </view>
+</view>
+</view>
+<view class='list {{heidden1?"hidden":""}}'>
+  <view class='list1'>
+    <view>销量</view>
+    <view>新品</view>
+    <view>价格</view>
+  </view>
+  <view class='kongbai'>
+  </view>
+  <view class='view_for' wx:for='{{lists}}' wx:key='{{item.id}}' bindtap='onclick' id='{{item.id}}'>
+    <image src='{{item.img_url}}'></image>
+    <view class='view_for_text'>
+      <view>{{item.title}}</view>
+      <view>已售{{item.sold}}件</view>
+      <view>￥{{item.price}}</view>
+    </view>
+  </view>
+</view>
+<view class='list {{heidden2?"hidden":""}} '> 
+  <view class='view_for' >
+    <image src='{{lists.img_url}}'></image>
+    <view class='view_for_text'>
+      <view>{{lists.title}}</view>
+      <view>已售{{lists.solid}}件</view>
+      <view>￥{{lists.price}}</view>
+    </view>
+  </view>
+</view>
+<view class='float_left'>
+  <view bindtap='click' class='{{border1?"border":""}}'>全部</view>
+  <view bindtap='clickWorld' class='{{border2?"border":""}}'>汽车模型</view>
+  <view>轮胎</view>
+  <view >导航</view>
+</view>

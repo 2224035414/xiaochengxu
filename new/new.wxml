@@ -1,0 +1,14 @@
+<!--pages/new/new.wxml-->
+<view class='img_view'>
+  <image src='{{books.img_url}}'></image>
+</view>
+<view class='view_text'>
+  <view class='view1'>{{books.title}}</view>
+  <view class='view2'>{{books.time}}</view>
+</view>
+<view class='view_text1'>
+  <view>2010年12月15日，如果我能知道结果会是这样，当时我一定不会走。</view>
+  <image></image>
+  <view></view>
+  <image></image>
+</view>
